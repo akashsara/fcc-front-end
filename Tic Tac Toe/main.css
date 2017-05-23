@@ -1,0 +1,162 @@
+body {
+	background: url("lined_paper.png");
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.container-fluid {
+	padding: 0;
+	margin: 0;
+}
+
+/*Pre-game selection CSS*/
+
+h1 {
+	font-size: 1.5em;
+}
+
+.info {
+	max-width: 600px;
+	margin: auto;
+	margin-top: 10vh;
+	font-size: 4em;
+	text-align: center;
+}
+
+#chooseX, #chooseO {
+	width: 100%;
+	background: none;
+	font-size: 2em;
+}
+
+/*Game win CSS*/
+
+.winnerDisplay {
+	background: rgba(0, 0, 0, 0.6);
+	height: 100%;
+    width: 0;
+	z-index: 1;
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	font-size: 4em;
+	text-align: center;
+	overflow-x: hidden;
+	color: white;
+}
+
+#whoWon {
+	margin-top: 10vh;
+}
+
+/*CSS for the game board*/
+
+.game {
+	max-width: 800px;
+	margin: auto;
+	margin-top: 10vh;
+	padding: 20px;
+	text-align: center;
+}
+
+.gameSquare {
+	color: black;
+	height: 200px;
+	line-height: 200px;
+	border: none;
+	border-radius: 0px;
+	font-size: 10em;
+	text-align: center;
+	background: none;
+}
+
+.gameSquare:hover {
+	background: rgba(188, 120, 42, 0.65);
+}
+
+.gameSquare:active {
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.btn.disabled {
+	opacity: 1;
+	background: none;
+}
+
+.btn.disabled:hover {
+	background: none;
+	color: black;
+}
+
+/*CSS for individual boxes*/
+
+#g00 {
+	border-right: 5px solid black;
+	border-bottom: 5px solid black;
+}
+
+#g01 {
+	border-right: 5px solid black;
+	border-left: 5px solid black;
+	border-bottom: 5px solid black;
+}
+
+#g02 {
+	border-left: 5px solid black;
+	border-bottom: 5px solid black;
+}
+
+#g10 {
+	border-bottom: 5px solid black;
+	border-right: 5px solid black;
+	border-top: 5px solid black;
+}
+
+#g11 {
+	border: 5px solid black;
+}
+
+#g12 {
+	border-bottom: 5px solid black;
+	border-left: 5px solid black;
+	border-top: 5px solid black;
+}
+
+#g20 {
+	border-right: 5px solid black;
+	border-top: 5px solid black;
+}
+
+#g21 {
+	border-right: 5px solid black;
+	border-left: 5px solid black;
+	border-top: 5px solid black;
+}
+
+#g22 {
+	border-left: 5px solid black;
+	border-top: 5px solid black;
+}
+
+
+/*Makes the board smaller in mobile*/
+@media screen and (max-width: 480px){
+	.gameSquare {
+		height: 120px;
+		line-height: 120px;
+		font-size: 5em;
+	}
+	
+	h1 {
+		font-size: 1em;
+	}
+	
+	#chooseX, #chooseO {
+	font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.info {
+		font-size: 3em;
+	}	
+}

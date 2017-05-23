@@ -1,0 +1,49 @@
+body {
+  background: url("retina_wood.png");
+  padding-top: 10%;
+}
+
+#calculator {
+	background: #ffffff;
+	max-width: 750px;
+	padding: 20px;
+	border: 2px solid black;
+	box-shadow: 5px 5px 5px #000;
+}
+
+#calculatorDisplay {
+	border: 5px ridge #DDE2F4;
+	background: #DDF0F4;
+	max-width: 700px;
+	margin: 0 auto;
+	height: 100px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.button-grid {
+	padding-top: 10px;
+	margin: 0 auto;
+	font-size: 1.5em;
+	border: none;
+}
+
+.button-grid-button {
+	height: 50px;
+	margin: 0 auto;
+	border: none;
+	background: #ffffff;
+}
+
+.button-grid-button:enabled {
+	background-color: #ffffff;
+	border: none;
+	-webkit-appearance: none;
+	box-shadow: none;
+	outline: none;
+	color: black;
+}
+
+.button-grid-button:hover {
+	background-color: #DDE2F4;
+}

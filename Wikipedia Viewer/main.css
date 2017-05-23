@@ -1,0 +1,69 @@
+@media only screen and (max-device-width: 480px) {
+  .entry {
+		max-width: 800px;
+		margin: 0 auto;
+		background: white;
+		padding: 5px;
+		padding-left: 10px;
+		border-left: 10px solid #40BF4D;
+	}
+
+	.entry:hover, .entry:focus {
+		border-left: 10px solid #40BF4D;
+	}
+}
+
+h1 {
+		color: #ffffff;
+}
+
+body {
+  background: url("retina_wood.png");
+  padding-top: 20%;
+}
+
+
+#searchBox {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#searchIcon {
+	border-left-width:0;left:-2px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.form-control:focus {
+  border-color: black;
+  box-shadow: none;
+}
+
+#randomPage {
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+#results {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.results > a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.entry {
+	max-width: 800px;
+	margin: 0 auto;
+	background: white;
+	padding: 5px;
+	padding-left: 10px;
+	-webkit-transition: border 0.1s linear;
+    transition: border 0.1s linear;
+}
+
+.entry:hover, .entry:focus {
+	border-left: 10px solid #40BF4D;
+}

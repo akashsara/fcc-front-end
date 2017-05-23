@@ -1,0 +1,85 @@
+body {
+	background: #00061A;
+}
+
+.btn {
+	color: black;
+}
+
+.btn:active {
+	transform: translateY(4px);
+}
+
+#game {
+	padding: 10px;
+	margin: 10vh auto 0 auto;
+}
+#controls {
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#logo {
+	font-size: 5vh;
+}
+
+#score {
+	text-align: center;
+	font-size: 10vh;
+	color: white;
+}
+
+/*Buttons*/
+.gameButton {
+	width: 15vh;
+	height: 15vh;
+	margin: 0 auto;
+	border-radius: 100%;
+	border-style: solid;
+	border-width: 10px;
+	transition: 500ms linear all;
+}
+
+#buttonBlue {
+	border-color: #0066ff;
+}
+
+#buttonRed {
+	border-color: #800000;
+}
+
+#buttonYellow {
+	border-color: #8B9532;
+}
+
+#buttonGreen {
+	border-color: #297A3D;
+}
+
+@media screen and (max-width: 480px) {
+	.gameButton {
+		width: 8vh;
+		height: 8vh;
+		border-width: 5px;
+	}
+	
+	#score {
+		font-size: 5vh;
+	}
+	
+	#logo {
+		font-size: 3vh;
+	}
+	
+	.btn-lg {
+		padding: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#game {
+		max-width: 60%;
+	}
+	
+}

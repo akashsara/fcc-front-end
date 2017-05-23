@@ -1,0 +1,126 @@
+body {
+	padding-top: 50px;
+	background: url("images/ep_naturalblack.png");
+	color: white;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+}
+
+.navbar-inverse {
+	background: #040B06;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-brand:hover {
+	color: #39AC8C;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #39AC8C;
+}
+
+.navbar-inverse .navbar-nav > .active > a{
+	color: #39AC8C;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover{
+	color: #39AC8C;
+}
+
+#intro, #about, #work  > * {
+	padding-left: 30vh;
+	padding-right: 30vh;
+}
+
+#intro {
+	margin: 0 auto;	
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+#intro ul {
+	text-align: center;
+	padding: 0;
+}
+
+#intro ul a {
+  color: white;
+}
+
+#intro ul li a {
+	transition: 700ms linear all;
+}
+
+#intro ul li a:hover {
+  display: inline-block;
+  color: #39AC8C;
+  transform: rotateY(359deg);
+  
+}
+
+#intro ul li {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+.footerText{
+	text-align: center;
+}
+
+.profilePic {
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+#wrapper .info {
+	position: relative;
+	bottom: 60px;
+	text-align: center;
+	visibility:hidden;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+}
+
+#wrapper:hover .info {
+	visibility: visible;
+}
+
+#about {
+	background: url("images/dark_exa.png");
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+@media screen and (max-width: 1368px){ 
+	#intro, #about, #work > * {
+		padding-left: 20vh;
+		padding-right: 20vh;
+	}
+}
+
+@media screen and (max-width: 1080px){ 
+	#intro, #about, #work  > * {
+		padding-left: 10vh;
+		padding-right: 10vh;
+	}
+}
+
+@media screen and (max-width: 600px){ 
+	#intro, #about, #work  > * {
+		padding-left: 1vh;
+		padding-right: 1vh;
+	}
+}

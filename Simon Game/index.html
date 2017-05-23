@@ -1,0 +1,89 @@
+<!-- Background from subtlepatterns.com -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="Akash Saravanan">
+		<title>Simon Game</title>
+
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Custom style -->
+		<link href="main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+	<div class="container-fluid">
+	<audio src="simonSound1.mp3" type="audio/mpeg" id="soundBlue"></audio>
+	<audio src="simonSound2.mp3" type="audio/mpeg" id="soundRed"></audio>
+	<audio src="simonSound3.mp3" type="audio/mpeg" id="soundGreen"></audio>
+	<audio src="simonSound4.mp3" type="audio/mpeg" id="soundYellow"></audio>
+		<div id="game">
+			<div id="controls">
+				<div class="row">
+					<div class="col-xs-12">
+						<p id="logo">Simon Game</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<button class="btn btn-block btn-lg" id="startButton">Start</button>
+					</div>
+					<div class="col-xs-6">
+						<button class="btn btn-block btn-lg" id="strictButton">Strict Mode</button>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="gameButton" id="buttonGreen"></div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="gameButton" id="buttonYellow"></div>
+				</div>
+				<div class="col-xs-4">
+					<div id="score">--</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="gameButton" id="buttonRed"></div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="gameButton" id="buttonBlue"></div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="simon.js"></script>
+	<!--
+	================================================== -->
+	</body>
+</html>
