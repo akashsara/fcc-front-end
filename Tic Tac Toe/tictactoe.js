@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	var playerChoice, aiChoice, coordsX, coordsY, firstMove = true;
+	var numCalculations = 0;
 	
 	//Variables for each box
 	var gameBoard = [
@@ -10,6 +11,7 @@ $(document).ready(function() {
 	
 	//Resets the board back to normal
 	function resetBoard() {
+		numCalculations = 0
 		gameBoard = [
 			[null, null, null],
 			[null, null, null],
@@ -49,6 +51,7 @@ $(document).ready(function() {
 			else if(score == +10) {
 				$('#whoWon').text("YOU LOSE");
 			}
+			console.log("Calculations: ", numCalculations)
 			$('.winnerDisplay').css("width", "100%");
 			$('.winnerDisplay').on('click', function(){
 				resetBoard();
@@ -107,11 +110,14 @@ $(document).ready(function() {
 		return 0;
 	}
 
-	function minimax(isAITurn) {
+	function minimax(isAITurn, depth = 0) {
+		numCalculations++;
 		//Check if anyone won and return score if they did
 		var score = checkWin();
-		if(score == 10 || score == -10)
-			return score;
+		if(score == 10) 
+			return score - depth;
+		if(score == -10)
+			return depth + score;
 		
 		//Check if there are any moves left. If no, return 0 for tie
 		if(areMovesRemaining() == false) 
@@ -131,7 +137,7 @@ $(document).ready(function() {
 						//Make the move
 						gameBoard[i][j] = aiChoice;
 						//Recursive minimax
-						temp = minimax(!isAITurn);
+						temp = minimax(!isAITurn, depth + 1);
 						//Gets best value
 						best = (temp > best)?temp:best;
 						//Undo the move
@@ -155,7 +161,7 @@ $(document).ready(function() {
 						//Make the move
 						gameBoard[i][j] = playerChoice;
 						//Recursive minimax
-						temp = minimax(!isAITurn);
+						temp = minimax(!isAITurn, depth);
 						//Gets worst value
 						best = (temp < best)?temp:best;
 						//Undo the move
@@ -200,8 +206,8 @@ $(document).ready(function() {
 		//Disabled the board so the user can't mess with it
 		disableBoard();
 		/*
-		If board is empty, place it in the top right corner. Wikipedia said it's the most optimal starting move. Saves the calculation for each box.
-		Said calculation results in top right corner being filled anyway
+		If board is empty, place it in the top left corner. Wikipedia said it's the most optimal starting move. Saves the calculation for each box.
+		Said calculation results in top left corner being filled anyway
 		*/
 		if(firstMove) {
 			firstMove = false;
