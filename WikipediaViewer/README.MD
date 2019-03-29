@@ -3,4 +3,4 @@ User can search for anything and it shows the top 10 entries from Wikipedia with
 
 Made for a FreeCodeCamp project.
 
-Live Demo: http://akashtest.com.s3-website.ap-south-1.amazonaws.com/wiki/index.html
+Live Demo: https://sharp-mccarthy-f4f1b7.netlify.com/wikipediaviewer/index.html

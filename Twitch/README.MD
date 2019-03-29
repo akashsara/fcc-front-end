@@ -5,4 +5,4 @@ Search function is super weird right now. Need to figure out a way to move the m
 
 Made for a FreeCodeCamp project.
 
-Live Demo: http://akashtest.com.s3-website.ap-south-1.amazonaws.com/twitch/index.html
+Live Demo: https://sharp-mccarthy-f4f1b7.netlify.com/twitch/index.html

@@ -1,4 +1,4 @@
 # portfolio
 Portfolio site.
 
-Live Demo: https://s3.ap-south-1.amazonaws.com/akashtest.com/portfolio/index.html
+Live Demo: https://sharp-mccarthy-f4f1b7.netlify.com/portfolio/index.html

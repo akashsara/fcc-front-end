@@ -1,4 +1,4 @@
 # fcc-front-end
 Repository for all my FreeCodeCamp frontend projects.
 
-All sites can be accessed from here: https://s3.ap-south-1.amazonaws.com/akashtest.com/index.html
+All sites can be accessed from here: https://sharp-mccarthy-f4f1b7.netlify.com/

@@ -3,4 +3,4 @@ Website which displays local weather with a relevant background based on the use
 
 Made for a FreeCodeCamp project.
 
-Live Demo: http://akashtest.com.s3-website.ap-south-1.amazonaws.com/weather/index.html
+Live Demo: https://sharp-mccarthy-f4f1b7.netlify.com/weatherdisplay/index.html
